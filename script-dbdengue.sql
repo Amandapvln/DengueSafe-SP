@@ -79,3 +79,13 @@ DELETE FROM Morador WHERE idMorador = 2;
 -- Conferir dados atualizados
 SELECT * FROM Morador;
 SELECT * FROM casos;
+
+-- Adicionar a nova coluna id_morador como AUTO_INCREMENT
+ALTER TABLE morador
+ADD COLUMN id_morador BIGINT NOT NULL AUTO_INCREMENT;
+
+-- Definir a coluna id_morador como a nova PRIMARY KEY
+ALTER TABLE morador
+ADD PRIMARY KEY (id_morador);
+
+

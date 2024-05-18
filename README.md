@@ -33,11 +33,11 @@ Antes de começar, é necessário ter o MySQL instalado e configurado. Você pod
 
 ## Configuração do Banco de Dados
 
-1. Crie um banco de dados chamado `dbdengue`.
+1. Crie um banco de dados chamado `dengue_db`.
 2. Configure o arquivo `application.properties` com as credenciais do seu banco de dados MySQL:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/dbdengue?useSSL=false&serverTimezone=UTC
+spring.datasource.url=jdbc:mysql://localhost:3306/dengue_db?useSSL=false&serverTimezone=UTC
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver

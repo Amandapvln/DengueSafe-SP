@@ -24,7 +24,9 @@ public class CasoController {
 
     @GetMapping
     public List<Caso> getAllCasos() {
-        return casoService.getAllCasos();
+        List<Caso> lista = casoService.getAllCasos();
+        System.out.println(lista);
+        return lista;
     }
 
     @GetMapping("/{id}")

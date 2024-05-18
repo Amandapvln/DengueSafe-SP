@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Caso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Editar Caso</h1>
+
+    <form id="formCaso">
+        <input type="hidden" id="idCaso" name="idCaso">
+        
+        <label>Data de Registro:</label>
+        <input type="date" id="dataRegistro" name="dataRegistro" required><br><br>
+        
+        <label>Status:</label>
+        <input type="text" id="status" name="status" maxlength="1" required><br><br>
+        
+        <label>Sintomas:</label>
+        <input type="text" id="sintomas" name="sintomas" required><br><br>
+        
+        <label>Tratamento:</label>
+        <input type="text" id="tratamento" name="tratamento" required><br><br>
+        
+        <label>Latitude:</label>
+        <input type="text" id="latitude" name="latitude" required><br><br>
+        
+        <label>Longitude:</label>
+        <input type="text" id="longitude" name="longitude" required><br><br>
+        
+        <label>Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required><br><br>
+        
+        <label>Região:</label>
+        <input type="text" id="regiao" name="regiao" required><br><br>
+        
+        <input type="submit" value="Salvar">
+    </form>
+
+    <script src="js/editarCaso.js"></script>
+</body>
+</html>
